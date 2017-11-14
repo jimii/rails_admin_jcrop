@@ -1,5 +1,5 @@
 :javascript
-  var rails_admin_jcrop_options = #{field.jcrop_options.to_json};
+  var rails_admin_jcrop_options = #{field.jcrop_options.to_json.html_safe};
 
 = stylesheet_link_tag 'rails_admin/jquery.Jcrop'
 = javascript_include_tag 'rails_admin/jquery.Jcrop'
