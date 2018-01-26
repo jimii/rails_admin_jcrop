@@ -1547,7 +1547,7 @@
     var api = {
       setImage: setImage,
       animateTo: animateTo,
-      setSelect: [0, 0, 360, 360],
+      setSelect: setSelect,
       setOptions: setOptionsNew,
       tellSelect: tellSelect,
       tellScaled: tellScaled,
@@ -1651,7 +1651,7 @@
     // Basic Settings
     allowSelect: true,
     allowMove: true,
-    allowResize: false,
+    allowResize: true,
 
     trackDocument: true,
 
@@ -1665,8 +1665,7 @@
     handleOpacity: 0.5,
     handleSize: null,
 
-    aspectRatio: 1,
-    setSelect: [0, 0, 360, 360],
+    aspectRatio: 0,
     keySupport: true,
     createHandles: ['n','s','e','w','nw','ne','se','sw'],
     createDragbars: ['n','s','e','w'],
@@ -1686,8 +1685,8 @@
     swingSpeed: 3,
 
     minSelect: [0, 0],
-    maxSize: [360, 360],
-    minSize: [360, 360],
+    maxSize: [0, 0],
+    minSize: [0, 0],
 
     // Callbacks / Event Handlers
     onChange: function () {},
