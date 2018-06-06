@@ -64,6 +64,7 @@
       dialog.find('.save-action').unbind().click(function(){
         $(this).addClass('disabled');
         form.submit();
+        dialog.modal('hide');
         return false;
       }).html(saveButtonText);
 
